@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private InventoryDisplay display;
-    private InventoryData data;
+    [SerializeField] private InventoryData data;
 
     private void Awake()
     {
