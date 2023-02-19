@@ -16,10 +16,7 @@ public class Inventory : MonoBehaviour
 
     public Item AddItem(Item _item)
     {
-        Debug.Log("Test 1");
         if(!data.SlotAvailable(_item)) return _item;
-
-        Debug.Log("Test 2");
 
         data.AddItem(ref _item);
 

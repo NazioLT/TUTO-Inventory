@@ -13,14 +13,14 @@ public class Test : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    [ContextMenu("test 1")]
-    public void Test1()
+    [ContextMenu("Test Push")]
+    public void Add()
     {
         itemToPush = inventory.AddItem(itemToPush);
     }
 
-    [ContextMenu("test 2")]
-    public void Test2()
+    [ContextMenu("Test Pick")]
+    public void Pick()
     {
         pickedItem = inventory.PickItem(1);
     }

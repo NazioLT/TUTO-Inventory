@@ -12,7 +12,7 @@ public struct Item
     {
         if(Full) return;
 
-        if(data == null) data = _other.Data;
+        if(Empty) data = _other.Data;
 
         if (_other.data != data) throw new System.Exception("Try to merge differents item types.");
 
