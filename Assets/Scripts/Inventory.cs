@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private InventoryDisplay display;
-    private InventoryData data;
+    [SerializeField] private InventoryData data;
 
     private void Awake()
     {
@@ -16,7 +16,10 @@ public class Inventory : MonoBehaviour
 
     public Item AddItem(Item _item)
     {
+        Debug.Log("Test 1");
         if(!data.SlotAvailable(_item)) return _item;
+
+        Debug.Log("Test 2");
 
         data.AddItem(ref _item);
 
