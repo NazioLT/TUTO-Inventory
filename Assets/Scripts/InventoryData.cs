@@ -8,7 +8,7 @@ public class InventoryData
         items = new Item[_slotCount];
     }
 
-    [field : SerializeField]public Item[] items { private set; get; }
+    [field: SerializeField] public Item[] items { private set; get; }
 
     public bool SlotAvailable(Item _itemToAdd)
     {
@@ -24,7 +24,7 @@ public class InventoryData
     {
         for (int i = 0; i < items.Length; i++)
         {
-            if(_itemToAdd.Empty) return;//Finished
+            if (_itemToAdd.Empty) return;//Finished
 
             if (items[i].AvailableFor(_itemToAdd))
             {
@@ -35,7 +35,7 @@ public class InventoryData
 
     public Item Pick(int _slotID)
     {
-        if(_slotID > items.Length) throw new System.Exception("Out of inventory");
+        if (_slotID > items.Length) throw new System.Exception("Out of inventory");
 
         Item _item = items[_slotID];
         items[_slotID] = new Item();

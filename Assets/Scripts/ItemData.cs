@@ -5,4 +5,5 @@ public class ItemData : ScriptableObject
 {
     [SerializeField] public string itemName;
     [SerializeField] public int stackMaxCount;
+    [SerializeField] public Sprite icon;
 }
