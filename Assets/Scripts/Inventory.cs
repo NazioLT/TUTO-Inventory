@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -12,6 +10,8 @@ public class Inventory : MonoBehaviour
         int _slotCount = display.Initialize();
 
         data = new InventoryData(_slotCount);
+
+        display.UpdateDisplay(data.items);
     }
 
     public Item AddItem(Item _item)

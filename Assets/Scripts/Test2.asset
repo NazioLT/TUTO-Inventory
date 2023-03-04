@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: B
   stackMaxCount: 10
+  icon: {fileID: 21300000, guid: 232ae62d1f5a82344b7ae325ed0b9efb, type: 3}

@@ -36,4 +36,5 @@ public struct Item
     public ItemData Data => data;
     public bool Full => data && count >= data.stackMaxCount;
     public bool Empty => count == 0 || data == null;
+    public int Count => count;
 }
