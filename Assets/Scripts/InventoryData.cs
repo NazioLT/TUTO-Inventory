@@ -1,6 +1,3 @@
-using UnityEngine;
-
-[System.Serializable]
 public class InventoryData
 {
     public InventoryData(int _slotCount)
@@ -8,7 +5,7 @@ public class InventoryData
         items = new Item[_slotCount];
     }
 
-    [field: SerializeField] public Item[] items { private set; get; }
+    public Item[] items { private set; get; }
 
     public bool SlotAvailable(Item _itemToAdd)
     {
