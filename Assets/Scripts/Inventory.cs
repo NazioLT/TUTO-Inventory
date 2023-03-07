@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        int _slotCount = display.Initialize();
+        int _slotCount = display.Initialize(this);
 
         data = new InventoryData(_slotCount);
 
@@ -32,5 +32,12 @@ public class Inventory : MonoBehaviour
         display.UpdateDisplay(data.items);
 
         return _result;
+    }
+
+    public void SwapSlots(int _slotA, int _slotB)
+    {
+        data.Swap(_slotA, _slotB);
+
+        display.UpdateDisplay(data.items);
     }
 }

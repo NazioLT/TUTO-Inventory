@@ -39,4 +39,12 @@ public class InventoryData
 
         return _item;
     }
+
+    public void Swap(int _slotA, int _slotB)
+    {
+        Item _temp = items[_slotA];
+
+        items[_slotA] = items[_slotB];
+        items[_slotB] = _temp;
+    }
 }
