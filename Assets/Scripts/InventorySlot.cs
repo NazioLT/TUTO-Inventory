@@ -48,8 +48,6 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
-        print("Begin : " + index);
-
         inventoryDisplay.DragSlot(index);
         initialImagePosition = itemImage.transform.localPosition;
         itemImage.transform.SetParent(inventoryDisplay.transform);
@@ -57,15 +55,11 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     void IDragHandler.OnDrag(PointerEventData eventData)
     {
-        print("Dragging : " + index);
-
         itemImage.transform.position = eventData.position;
     }
 
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
-        print("End : " + index);
-
         itemImage.transform.SetParent(transform);
         itemImage.transform.localPosition = initialImagePosition;
     }

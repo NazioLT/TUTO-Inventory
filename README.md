@@ -5,3 +5,8 @@ Bonjour à tous, et bienvenue dans le repository de la serie "[Créer un Inventa
 **Niveau de difficulté** : Intermédiaire
 
 Ce repository sera mis à jour à chaque épisode de la série youtube.
+
+[[Episode 1](https://www.youtube.com/watch?v=EDMUubMDZ88)] : Création de la base de l'inventaire.
+[[Episode 2](https://www.youtube.com/watch?v=GvGLyAll0Ks)] : Création de la data et stockage des items dans l'inventaire.
+[[Episode 3](https://www.youtube.com/watch?v=zoOmdKlanyc)] : Affichage des items de l'inventaire.
+[[Episode 4]()] : Drag and drop des items.
