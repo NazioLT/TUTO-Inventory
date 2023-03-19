@@ -492,7 +492,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 105}
-  m_Pivot: {x: 1.5, y: 0.5}
+  m_Pivot: {x: 1.25, y: 1}
 --- !u!114 &658241724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,8 +583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e8f18851f08544b922fbca8c92217f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeButton: {fileID: 1054787981}
   dropButton: {fileID: 1430659527}
+  closeButton: {fileID: 1054787981}
 --- !u!1 &725923597
 GameObject:
   m_ObjectHideFlags: 0
