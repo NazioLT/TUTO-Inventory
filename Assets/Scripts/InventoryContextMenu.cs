@@ -23,7 +23,11 @@ public class InventoryContextMenu : MonoBehaviour
     {
         Item _slotItem = inventory.Data[_slotID];
 
-        if(_slotItem.Empty) return;
+        if(_slotItem.Empty) 
+        {
+            Close();
+            return;
+        }
 
         gameObject.SetActive(true);
         transform.position = _slot.transform.position;
