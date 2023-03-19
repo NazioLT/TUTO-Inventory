@@ -4,6 +4,7 @@ public class InventoryDisplay : MonoBehaviour
 {
     private int draggedSlotIndex;
 
+    [SerializeField] private InventoryContextMenu contextMenu;
     private InventorySlot[] slots;
     private Inventory inventory;
 
@@ -12,6 +13,8 @@ public class InventoryDisplay : MonoBehaviour
     {
         slots = GetComponentsInChildren<InventorySlot>();
         inventory = _inventory;
+
+        contextMenu.Init(inventory);
 
         for (var i = 0; i < slots.Length; i++)
         {
@@ -34,6 +37,7 @@ public class InventoryDisplay : MonoBehaviour
     public void ClickSlot(int _index)
     {
         Debug.Log($"Clic on slot {_index}");
+        contextMenu.Select(_index, slots[_index]);
     }
 
     public void DragSlot(int _index) => draggedSlotIndex = _index;

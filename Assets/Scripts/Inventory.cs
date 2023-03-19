@@ -40,4 +40,6 @@ public class Inventory : MonoBehaviour
 
         display.UpdateDisplay(data.items);
     }
+
+    public Item[] Data => data.items;
 }
